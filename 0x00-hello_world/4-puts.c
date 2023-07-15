@@ -1,9 +1,13 @@
 #include <stdio.h>
-/*
- * my first program
+/**
+ * main - entry point
+ *
+ * description : c ptogram to print by puts not printf
+ *
+ * Return : always 0 (success)
  */
 int main(void)
 {
 	puts("\"Programming is like building a multilingual puzzle");
-	return(0);
+	return (0);
 }
