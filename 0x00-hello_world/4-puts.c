@@ -2,9 +2,9 @@
 /**
  * main - Entry point
  *
- * Description : A C program to print by puts not printf
+ * Description: A C program to print by puts not printf
  *
- * Return : Always 0 (success)
+ * Return: Always 0 (success)
  */
 int main(void)
 {
