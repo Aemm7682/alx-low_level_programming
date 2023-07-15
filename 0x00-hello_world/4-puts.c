@@ -1,10 +1,10 @@
 #include <stdio.h>
 /**
- * main - entry point
+ * main - Entry point
  *
- * description : c ptogram to print by puts not printf
+ * description : A c ptogram to print by puts not printf
  *
- * Return : always 0 (success)
+ * Return : Always 0 (success)
  */
 int main(void)
 {
