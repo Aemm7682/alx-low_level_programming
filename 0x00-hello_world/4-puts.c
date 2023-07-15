@@ -2,7 +2,7 @@
 /**
  * main - Entry point
  *
- * description : A c ptogram to print by puts not printf
+ * Description : A C program to print by puts not printf
  *
  * Return : Always 0 (success)
  */
