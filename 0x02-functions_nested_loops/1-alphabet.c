@@ -1,12 +1,17 @@
 #include "main.h"
-
 /**
- * main - check the code
+ *  main - entry point
  *
- * Return: Always 0.
+ *  Description: to print alphabet in lowercase _putchar and return 0
+ *
+ *  Return:  zero is (success)
+ *
  */
-int main(void)
+void print_alphabet(void)
 {
-	print_alphabet();
-	return (0);
+	char ch;
+
+	for (ch = 'a' ; ch <= 'z' ; ch++)
+		_putchar(ch);
+	_putchar('\n');
 }
