@@ -1,10 +1,6 @@
 #include "main.h"
 /**
- *  main - entry point
- *
- *  Description: to print alphabet in lowercase _putchar and return 0
- *
- *  Return:  zero is (success)
+ * print_alphabet - to print alphabet in lowercase
  *
  */
 void print_alphabet(void)
