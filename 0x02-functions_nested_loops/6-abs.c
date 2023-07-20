@@ -6,7 +6,7 @@
  *
  * Return: is 1 if + and -1 if - else 0
  */
-int _abs(int)
+int _abs(int a)
 {
 	int a;
 
