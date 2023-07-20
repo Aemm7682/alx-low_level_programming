@@ -2,15 +2,13 @@
 /**
  * _abs - is function to give only positive value
  *
- * @int: is the input to function
+ * @a: is the input to function
  *
  * Return: is 1 if + and -1 if - else 0
  */
 int _abs(int a)
 {
-	int b;
-
-	b = abs(a);
-
-	return (b);
+	if (a < 0)
+		a = (-1) * a;
+	return (a);
 }
