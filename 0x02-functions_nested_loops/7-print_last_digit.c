@@ -11,7 +11,7 @@ int print_last_digit(int z)
 	int last_dig;
 
 	last_dig = z % 10;
-	_putchar(last_dig + '0');
+	_putchar('0' + last_dig);
 	return (0);
 }
 
