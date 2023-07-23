@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- *
+ * print_most_numbers - function to print exclude 2 and 4
  *
  */
 void print_most_numbers(void)
