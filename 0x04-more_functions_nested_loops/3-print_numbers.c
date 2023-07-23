@@ -1,10 +1,8 @@
 #include "main.h"
 /**
- * _isupper - function to check uppercase
+ * print_numbers - function to check uppercase
  *
- * @c: is input to check
- *
- *Return: 1 if uppercase and 0 if not
+ *Return: 0 is success
  *
  */
 void print_numbers(void)
