@@ -10,5 +10,11 @@
  */
 char *_strcat(char *dest, char *src)
 {
-	return (strcat(dest, src));
+	unsigned long dest_len = strlen(dest);
+	unsigned long i;
+
+	for (i = 0 ; i < src[i] && src[i] != '\0' ; i++)
+		dest[dest_len + i] = src[i];
+	dest[dest_len + i] = '\0';
+	return (dest);
 }
