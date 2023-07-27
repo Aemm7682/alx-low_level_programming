@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * _strncat - a function that concatenates two strings.
+ * _strncpy - a function that concatenates two strings.
  *
  * @dest: variable
  *
@@ -10,11 +10,11 @@
  *
  * Return: return dest
  */
-char *_strncat(char *dest, char *src, int n)
+char *_strncpy(char *dest, char *src, int n)
 {
-	size_t i;
+	int i;
 
-	for  (i = 0 ; i < n && scr[i] != 0 ; i++)
+	for  (i = 0 ; i < n && scr[i] != '\0' ; i++)
 		dest[i] = scr[i];
 	for ( ; i < n ; i++)
 		dest[i] = '\0';
