@@ -10,8 +10,8 @@
  */
 char *_strcat(char *dest, char *src)
 {
-	unsigned long dest_len = strlen(dest);
-	unsigned long i;
+	size_t dest_len = strlen(dest);
+	size_t i;
 
 	for (i = 0 ; i < src[i] && src[i] != '\0' ; i++)
 		dest[dest_len + i] = src[i];
