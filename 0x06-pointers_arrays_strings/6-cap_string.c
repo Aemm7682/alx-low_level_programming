@@ -28,7 +28,7 @@ char *cap_string(char *s)
 	int xzo = 1;
 	int j;
 
-	for (j = 0 ; s[i] ; i++)
+	for (j = 0 ; s[j] ; j++)
 	{
 		if (xzo && s[j] >= 'a' && s[j] <= 'z')
 			s[j] -= 32;
