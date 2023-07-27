@@ -1,14 +1,16 @@
 #include "main.h"
 /**
- * _strcat - a function that concatenates two string
+ * _strncat - a function that concatenates two string
  *
  * @dest: variable
  *
  * @src: variable
  *
+ * @n: variable
+ *
  * Return: dest is success
  */
-char *_strcat(char *dest, char *src, int n)
+char *_strncat(char *dest, char *src, int n)
 {
 	int destlength = strlen(dest);
 	int i;
