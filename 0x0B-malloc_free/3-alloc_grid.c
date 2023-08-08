@@ -1,4 +1,4 @@
-#include "mian.h"
+#include "main.h"
 /**
  * **alloc_grid - function
  * @height: variable
