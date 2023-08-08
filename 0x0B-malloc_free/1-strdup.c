@@ -7,21 +7,21 @@
 char *_strdup(char *str)
 {
 	int i = 0, size = 0;
-	char *d;
+	char *m;
 
-	if (str == null)
-		return (null);
+	if (str == Null)
+		return (Null);
 	for (; str[size] != '\0' ; size++)
 		;
-	d = malloc(size * sizeof(*str) + 1);
-	if (d == 0)
+	m = malloc(size * sizeof(*str) + 1)
+	if (m == 0)
 	{
-		return (null);
+		return (Null);
 	}
 	else
 	{
 		for (; i < size ; i++)
-			d[i] = str[i];
+			m[i] = str[i];
 	}
-	return (d);
+	return (m);
 }
