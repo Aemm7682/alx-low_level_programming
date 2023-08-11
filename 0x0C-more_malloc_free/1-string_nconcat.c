@@ -21,7 +21,7 @@ int _strlen(char *s)
  */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-	int i, j, size1, size2;
+	unsigned int i, j, size1, size2;
 	char *string;
 
 	if (s1 == NULL)
