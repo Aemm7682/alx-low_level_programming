@@ -1,14 +1,16 @@
 #include "main.h"
 /**
- * *_realloc - function
+ * _realloc - function
  * @ptr: pointer
  * @old_size: old size
  * @new_size: new size
+ * Return: return
  */
 void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 {
 	void *p;
-	unsigned i;
+	unsigned int i;
+
 	if (new_size == old_size)
 		return (ptr);
 	if (new_size == 0 && ptr != NULL)
@@ -20,7 +22,7 @@ void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 	{
 		p = malloc(new _size);
 		if (p == NULL)
-			reurn (NULL);
+			return (NULL);
 		return (p);
 	}
 	if (new_size > old_size)
