@@ -1,12 +1,12 @@
 #include "main.h"
 /**
- * *memset - function
+ * *_memset - function
  * @s: pointer to put constant
  * @b: constant
  * @n: max byte use
  * Return: ptr
  */
-char *memset(char *s, char b, unsigned int n)
+char *_memset(char *s, char b, unsigned int n)
 {
 	char *ptr = s;
 
@@ -29,6 +29,6 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 	m = malloc(nmemb * sizeof(int));
 	if (m == 0)
 		return (NULL);
-	memset(m, 0, nmemb * sizeof(int));
+	_memset(m, 0, nmemb * sizeof(int));
 	return (m);
 }
