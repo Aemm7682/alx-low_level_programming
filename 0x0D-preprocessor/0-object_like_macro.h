@@ -1,5 +1,5 @@
-#ifndef 0-OBJECT_LIKE_MACRO_H
-#define 0-OBJECT_LIKE_MACRO_H
+#ifndef _OBJECT_LIKE_MACRO_H
+#define _OBJECT-LIKE_MACRO_H
 #define SIZE 1024
 int _putchar(char c);
 #endif
