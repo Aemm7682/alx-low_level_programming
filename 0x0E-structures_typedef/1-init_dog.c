@@ -1,4 +1,4 @@
-#include <stdioh>
+#include <stdio.h>
 #include "dog.h"
 /**
  * inti_dog - function
