@@ -5,8 +5,7 @@
  * @a: is input to check
  *
  * @b: is input to check
- *
- *Return: mul
+ * Return: mul
  *
  */
 int mul(int a, int b)
