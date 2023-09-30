@@ -1,4 +1,5 @@
 #include "main.h"
+#include <string.h>
 /**
  * is_palindrome - to check if the text is plain
  * aux_is_palindrome - to help the up function
@@ -13,8 +14,7 @@ int is_palindrome(char *s)
 	int i = 0;
 	int len = 0;
 
-	for (; s[i] != '\0'; i++)
-		len++;
+	len = strlen(s);
 	return (aux_is_palindrome(s, 0, len - 1));
 }
 /**
