@@ -22,7 +22,9 @@ int aux_sqrt_recursion(int n, int min, int max)
 {
 	int mid = (min + max) / 2;
 
-	if (max < min)
+	if (n == 1)
+		return (n);
+	else if (max < min)
 		return (-1);
 	else if (mid == n / mid)
 		return (mid);
