@@ -11,7 +11,6 @@
 int aux_is_palindrome(char *s, int start, int end);
 int is_palindrome(char *s)
 {
-	int i = 0;
 	int len = 0;
 
 	len = strlen(s);
