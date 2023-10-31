@@ -12,14 +12,14 @@ char **strtow(char *str)
 	char **arr;
 
 	if (str == NULL || str[0] == '\0')
-		return NULL;
+		return (NULL);
 	for (i = 0; str[i] != '\0'; i++)
-		if ((str[i] == ' ' || str[i+1] == '\0') && str[i-1] != ' ')
+		if ((str[i] == ' ' || str[i + 1] == '\0') && (i > 0 && str[i - 1] != ' '))
 			words++;
 	arr = malloc(sizeof(char *) * (words + 1));
 	if (arr == NULL)
-		return NULL;
-	for (i = 0; str[i] != '\0'; i++)
+		return (NULL);
+	for (i = 0; str[i] != '\0' && k < words; i++)
 		if (str[i] != ' ')
 		{
 			for (j = i; str[j] != ' ' && str[j] != '\0'; j++)
@@ -30,7 +30,7 @@ char **strtow(char *str)
 				for (; k >= 0; k--)
 					free(arr[k]);
 				free(arr);
-				return NULL;
+				return (NULL);
 			}
 			for (l = i, m = 0; l < i + len; l++, m++)
 				arr[k][m] = str[l];
@@ -39,5 +39,5 @@ char **strtow(char *str)
 			len = 0;
 		}
 	arr[k] = NULL;
-	return arr;
+	return (arr);
 }
