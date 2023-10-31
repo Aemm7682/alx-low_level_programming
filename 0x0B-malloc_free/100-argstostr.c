@@ -7,7 +7,7 @@
  */
 char *argstostr(int ac, char **av)
 {
-	int i, j, length, w;
+	int i, j, length = 0, w = 0;
 	char *ptr;
 
 	if (ac == 0 || av == NULL)
@@ -21,7 +21,7 @@ char *argstostr(int ac, char **av)
 	{
 		for (j = 0 ; av[i][j] != '\0' ; j++, w++)
 			ptr[w] = av[i][j];
-		ptr[w] = '\n';
+		ptr[w++] = '\n';
 		w++;
 	}
 	ptr[w] = '\0';
