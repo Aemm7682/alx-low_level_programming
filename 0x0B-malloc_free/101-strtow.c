@@ -19,6 +19,14 @@ char **strtow(char *str)
 	arr = malloc(sizeof(char *) * (words + 1));
 	if (arr == NULL)
 		return (NULL);
+	if (words == 0)
+	{
+		arr[0] = malloc(sizeof(char));
+		if (arr[0] = NULL)
+			return (NULL);
+		arr[0][0] = '\0';
+		return (arr);
+	}
 	for (i = 0; str[i] != '\0' && k < words; i++)
 		if (str[i] != ' ')
 		{
