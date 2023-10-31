@@ -22,7 +22,7 @@ char **strtow(char *str)
 	if (words == 0)
 	{
 		arr[0] = malloc(sizeof(char));
-		if (arr[0] = NULL)
+		if (arr[0] == NULL)
 			return (NULL);
 		arr[0][0] = '\0';
 		return (arr);
