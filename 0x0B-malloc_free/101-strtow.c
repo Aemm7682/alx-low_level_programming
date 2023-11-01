@@ -24,8 +24,12 @@ char **strtow(char *str)
 	{
 		arr[0] = malloc(sizeof(char));
 		if (arr[0] == NULL)
+		{
+			free(arr);
 			return (NULL);
+		}
 		arr[0][0] = '\0';
+		arr[1] = NULL;
 		return (arr);
 	}
 	for (i = 0; str[i] != '\0' && k < words; i++)
@@ -36,8 +40,8 @@ char **strtow(char *str)
 			arr[k] = malloc(sizeof(char) * (len + 1));
 			if (arr[k] == NULL)
 			{
-				for (; k >= 0; k--)
-					free(arr[k]);
+				while (k >= 0)
+					free(arr[k--]);
 				free(arr);
 				return (NULL);
 			}
