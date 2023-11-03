@@ -7,7 +7,7 @@
  */
 int is_num(char *s)
 {
-	int i = 0, num1, num2;
+	int i = 0;
 
 	for (; s[i] != '\0' ; i++)
 	{
@@ -24,18 +24,19 @@ int is_num(char *s)
  */
 int main(int argc, char *argv[])
 {
+	int num1, num2;
 	if (argc != 3)
 	{
 		printf("Error\n");
-		return (98);
+		exit(98);
 	}
-	if (!is_num(argv[1]) || !is_num(argv[3]))
+	if (!is_num(argv[1]) || !is_num(argv[2]))
 	{
 		printf("Error\n");
 		return (98);
 	}
-	num1 = atoi(argv[2]);
-	num2 = atoi(argv[3]);
+	num1 = atoi(argv[1]);
+	num2 = atoi(argv[2]);
 	printf("%d\n", num1 * num2);
 	return (0);
 }
