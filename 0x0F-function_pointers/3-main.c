@@ -2,6 +2,7 @@
 /**
  * main - entry point
  * @argc: number of argment
+ * @argv: is vector for array
  * Return: 0
  */
 int main(int argc, char **argv)
