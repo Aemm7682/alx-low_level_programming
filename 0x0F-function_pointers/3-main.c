@@ -4,7 +4,7 @@
  * @argc: number of argment
  * Return: 0
  */
-int main(int argc, char **argc)
+int main(int argc, char **argv)
 {
 	int (*op_funs)(int, int);
 	int a, b;
