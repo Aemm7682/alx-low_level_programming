@@ -15,7 +15,7 @@ void format_char(char *separator, va_list ap)
  */
 void format_int(char *separator, va_list ap)
 {
-        printf("%s%d", separator, va_arg(ap, int));
+	printf("%s%d", separator, va_arg(ap, int));
 }
 /**
  * format_float - format character
@@ -24,7 +24,7 @@ void format_int(char *separator, va_list ap)
  */
 void format_float(char *separator, va_list ap)
 {
-        printf("%s%f", separator, va_arg(ap, double));
+	printf("%s%f", separator, va_arg(ap, double));
 }
 /**
  * format_string - string character
@@ -34,6 +34,7 @@ void format_float(char *separator, va_list ap)
 void format_string(char *separator, va_list ap)
 {
 	char *str = va_arg(ap, char *);
+
 	if (!str)
 	{
 		str = "(nil)";
