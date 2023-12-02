@@ -13,6 +13,7 @@
 int main(int ac, char **av)
 {
 	int from_fd = 0, to_fd = 0;
+	int close_from, close_to;
 	ssize_t b;
 	char buf[READ_BUF_SIZE];
 
@@ -32,11 +33,11 @@ int main(int ac, char **av)
 			dprintf(STDERR_FILENO, ERR_NOWRITE, av[2]), exit(99);
 	if (b == -1)
 		dprintf(STDERR_FILENO, ERR_NOREAD, av[2]), exit(98);
-	from_fd = close(from_fd);
-	to_fd = close(to_fd);
-	if (from_fd == -1)
+	close_from= close(from_fd);
+	close_to = close(to_fd);
+	if (close_from == -1)
 		dprintf(STDERR_FILENO, ERR_NOCLOSE, from_fd), exit(100);
-	if (to_fd == -1)
+	if (close_to == -1)
 		dprintf(STDERR_FILENO, ERR_NOCLOSE, to_fd), exit(100);
 	return (EXIT_SUCCESS);
 }
