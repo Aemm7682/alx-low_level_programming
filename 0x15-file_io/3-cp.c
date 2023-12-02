@@ -33,7 +33,7 @@ int main(int ac, char **av)
 			dprintf(STDERR_FILENO, ERR_NOWRITE, av[2]), exit(99);
 	if (b == -1)
 		dprintf(STDERR_FILENO, ERR_NOREAD, av[2]), exit(98);
-	close_from= close(from_fd);
+	close_from = close(from_fd);
 	close_to = close(to_fd);
 	if (close_from == -1)
 		dprintf(STDERR_FILENO, ERR_NOCLOSE, from_fd), exit(100);
