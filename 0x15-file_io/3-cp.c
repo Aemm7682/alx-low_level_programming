@@ -32,7 +32,7 @@ int main(int ac, char **av)
 		if (write(to_fd, buf, b) != b)
 			dprintf(STDERR_FILENO, ERR_NOWRITE, av[2]), exit(99);
 	if (b == -1)
-		dprintf(STDERR_FILENO, ERR_NOREAD, av[2]), exit(98);
+		dprintf(STDERR_FILENO, ERR_NOREAD, av[1]), exit(98);
 	close_from = close(from_fd);
 	close_to = close(to_fd);
 	if (close_from == -1)
