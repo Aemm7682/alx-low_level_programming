@@ -9,7 +9,7 @@ int main(void)
 	for (i = 0; i < 16; i++)
 	{
 		if (i >= 0 && i <= 9)
-			putchar(i + '0');
+			j = i + 48;
 		else
 			j = i + 87;
 		putchar(j);
