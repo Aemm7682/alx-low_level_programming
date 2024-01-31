@@ -3,7 +3,8 @@
  */
 int main(void)
 {
-	int i, j;
+	int i;
+	char j;
 
 	for (i = 0; i < 16; i++)
 	{
