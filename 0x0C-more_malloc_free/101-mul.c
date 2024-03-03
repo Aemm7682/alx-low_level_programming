@@ -26,18 +26,17 @@ int main(int argc, char *argv[])
 {
 	char command[256];
 
-        if (argc != 3)
-        {
-                printf("Error\n");
-                exit(98);
-        }
-        if (!is_num(argv[1]) || !is_num(argv[2]))
-        {
-                printf("Error\n");
-                return (98);
-        }
-
-        sprintf(command, "echo '%s * %s' | bc", argv[1], argv[2]);
-        system(command);
+	if (argc != 3)
+	{
+		printf("Error\n");
+		exit(98);
+	}
+	if (!is_num(argv[1]) || !is_num(argv[2]))
+	{
+		printf("Error\n");
+		return (98);
+	}
+	sprintf(command, "echo '%s * %s' | bc", argv[1], argv[2]);
+	system(command);
 	return (0);
 }
