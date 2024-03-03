@@ -24,19 +24,20 @@ int is_num(char *s)
  */
 int main(int argc, char *argv[])
 {
-	long int num1, num2;
-	if (argc != 3)
-	{
-		printf("Error\n");
-		exit(98);
-	}
-	if (!is_num(argv[1]) || !is_num(argv[2]))
-	{
-		printf("Error\n");
-		return (98);
-	}
-	num1 = atol(argv[1]);
-	num2 = atol(argv[2]);
-	printf("%ld\n", num1 * num2);
+	char command[256];
+
+        if (argc != 3)
+        {
+                printf("Error\n");
+                exit(98);
+        }
+        if (!is_num(argv[1]) || !is_num(argv[2]))
+        {
+                printf("Error\n");
+                return (98);
+        }
+
+        sprintf(command, "echo '%s * %s' | bc", argv[1], argv[2]);
+        system(command);
 	return (0);
 }
